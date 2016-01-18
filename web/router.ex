@@ -17,13 +17,9 @@ defmodule FastSite.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+    resources "/qips", QIPController
   end
 
-  scope "/qip", FastSite do
-    pipe_through :browser
-
-    get "/", QIPController, :index
-  end
 
   # Other scopes may use custom stacks.
   # scope "/api", FastSite do
