@@ -1,5 +1,7 @@
 # FastSite
 
+Port of Onesite to Elixir / Phoneix
+
 To start your Phoenix app:
 
   1. Install dependencies with `mix deps.get`
