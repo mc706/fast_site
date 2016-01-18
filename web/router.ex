@@ -19,6 +19,7 @@ defmodule FastSite.Router do
     get "/", PageController, :index
     resources "/qips", QIPController
     resources "/tickets", TicketController
+    resources "/registrations", RegistrationController, only: [:new, :create]
   end
 
 
