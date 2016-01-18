@@ -12,8 +12,8 @@ config :logger, level: :warn
 # Configure your database
 config :fast_site, FastSite.Repo,
   adapter: Ecto.Adapters.MySQL,
-  username: "root",
-  password: "",
+  username: "elixir",
+  password: "Rowing123!",
   database: "fast_site_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox

@@ -20,6 +20,12 @@
             %span.icon-bar
             %span.icon-bar
           %a.navbar-brand{href: "#"} FastSite
+        .collapse.navbar-collapse#navbar-collapse
+          %ul.nav.navbar-nav
+            %li.active
+              %a{href: "#"} Quality
+            %li
+              %a{href: "#"} Helpdesk
 
     .container{role: "main"}
       = render @view_module, @view_template, assigns

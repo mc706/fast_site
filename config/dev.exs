@@ -36,8 +36,8 @@ config :phoenix, :stacktrace_depth, 20
 # Configure your database
 config :fast_site, FastSite.Repo,
   adapter: Ecto.Adapters.MySQL,
-  username: "root",
-  password: "",
+  username: "elixir",
+  password: "Rowing123!",
   database: "fast_site_dev",
   hostname: "localhost",
   pool_size: 10
