@@ -1,0 +1,28 @@
+<h2>Show ticket</h2>
+
+<ul>
+
+  <li>
+    <strong>Title:</strong>
+    <%= @ticket.title %>
+  </li>
+
+  <li>
+    <strong>Description:</strong>
+    <%= @ticket.description %>
+  </li>
+
+  <li>
+    <strong>Status:</strong>
+    <%= @ticket.status %>
+  </li>
+
+  <li>
+    <strong>Date:</strong>
+    <%= @ticket.date %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: ticket_path(@conn, :edit, @ticket) %>
+<%= link "Back", to: ticket_path(@conn, :index) %>
