@@ -19,6 +19,12 @@ defmodule FastSite.Router do
     get "/", PageController, :index
   end
 
+  scope "/qip", FastSite do
+    pipe_through :browser
+
+    get "/", QIPController, :index
+  end
+
   # Other scopes may use custom stacks.
   # scope "/api", FastSite do
   #   pipe_through :api

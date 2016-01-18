@@ -1,0 +1,32 @@
+<h2>Listing qips</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Number</th>
+      <th>Description</th>
+      <th>Resolution</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for qip <- @qips do %>
+    <tr>
+      <td><%= qip.date %></td>
+      <td><%= qip.number %></td>
+      <td><%= qip.description %></td>
+      <td><%= qip.resolution %></td>
+
+      <td class="text-right">
+        <%= link "Show", to: qip_path(@conn, :show, qip), class: "btn btn-default btn-xs" %>
+        <%= link "Edit", to: qip_path(@conn, :edit, qip), class: "btn btn-default btn-xs" %>
+        <%= link "Delete", to: qip_path(@conn, :delete, qip), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<%= link "New qip", to: qip_path(@conn, :new) %>

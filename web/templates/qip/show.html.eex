@@ -1,0 +1,28 @@
+<h2>Show qip</h2>
+
+<ul>
+
+  <li>
+    <strong>Date:</strong>
+    <%= @qip.date %>
+  </li>
+
+  <li>
+    <strong>Number:</strong>
+    <%= @qip.number %>
+  </li>
+
+  <li>
+    <strong>Description:</strong>
+    <%= @qip.description %>
+  </li>
+
+  <li>
+    <strong>Resolution:</strong>
+    <%= @qip.resolution %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: qip_path(@conn, :edit, @qip) %>
+<%= link "Back", to: qip_path(@conn, :index) %>
