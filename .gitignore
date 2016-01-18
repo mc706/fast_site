@@ -109,3 +109,10 @@ Session.vim
 erl_crash.dump
 *.ez
 
+
+
+### Sass template
+.sass-cache/
+*.css.map
+
+
